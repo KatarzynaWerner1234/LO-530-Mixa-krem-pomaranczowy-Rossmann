@@ -9,7 +9,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  max-width: 990px;
+  max-width: 892px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -231,6 +231,7 @@ body {
   border-radius: 0 8px;
   width: -moz-max-content;
   width: max-content;
+  margin: 0 auto 8px auto;
 }
 #es-rc #es-rc-content .es-cross .es-header {
   color: #FAB283;
@@ -301,9 +302,6 @@ body {
 }
 #es-rc #es-rc-content .es-products .es-header--bold {
   display: block;
-}
-#es-rc #es-rc-content .es-products .es-cross__odkryj {
-  margin: 0 auto 8px auto;
 }
 #es-rc #es-rc-content .es-products__title--desktop {
   display: none;
@@ -382,14 +380,14 @@ body {
   display: grid;
   place-items: center;
 }
+@media (max-width: 720px) {
+  #es-rc #es-rc-content .es-kv__packshot img {
+    max-height: 300px;
+  }
+}
 @media (min-width: 576px) and (max-width: 719px) {
   #es-rc #es-rc-content .es-kv__packshot {
     display: none;
-  }
-}
-@media (max-width: 719px) {
-  #es-rc #es-rc-content .es-kv__packshot img {
-    max-height: 300px;
   }
 }
 @media (min-width: 576px) {
@@ -418,7 +416,6 @@ body {
   #es-rc #es-rc-content .es-features__wrapper {
     padding: 32px 0px 32px 32px;
     width: 65%;
-    max-width: 550px;
   }
   #es-rc #es-rc-content .es-features__reference {
     padding-left: 70px;
@@ -527,7 +524,7 @@ body {
     flex-basis: 50%;
     display: grid;
     align-content: flex-start;
-    max-width: 390px;
+    max-width: 375px;
   }
   #es-rc #es-rc-content .es-formula__single:hover {
     box-shadow: 1px 1px 15px 3px rgba(0, 0, 1, 0.1);
@@ -541,7 +538,7 @@ body {
     justify-content: center;
     width: 42%;
     gap: 32px;
-    padding-top: 145px;
+    padding-top: 130px;
   }
   #es-rc #es-rc-content .es-cross__wrapper {
     padding: 0 16px;
@@ -557,7 +554,7 @@ body {
   #es-rc #es-rc-content .es-cross__name {
     font-size: 14px;
     padding: 6px 12px;
-    width: 90%;
+    width: 100%;
     height: 4em;
     display: grid;
     place-items: center;
@@ -623,4 +620,4 @@ body {
   #es-rc #es-rc-content .es-cross__left {
     padding-left: 50px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
